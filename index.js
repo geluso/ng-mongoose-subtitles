@@ -8,7 +8,7 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'static')));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// mongoose.connect('/mongodb://localhost/moviesub');
+mongoose.connect('mongodb://localhost/moviesub');
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'static/index.html'));

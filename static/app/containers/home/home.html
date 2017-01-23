@@ -1,1 +1,8 @@
 <h1>THIS IS HOME.HTML in containers folder!</h1>
+<ul>
+  <li ng-repeat="script in homeComp.scripts">
+    <a ui-sref="watchState()">
+      {{script.title}}
+    </a>
+  </li>
+</ul>

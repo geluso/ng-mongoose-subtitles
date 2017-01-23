@@ -6,7 +6,12 @@ angular.module('App')
 });
 
 function HomeCompCtrl() {
+  var homeComp = this;
 
+  homeComp.scripts = [
+    {title: "original", _id: "sfdfksdjkfjsdd"},
+    {title: "WDI 11", _id: "zzczxcvxzcxxczxx"},
+  ];
 }
 
 HomeCompCtrl.$inject = [];
